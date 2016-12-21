@@ -24,6 +24,8 @@
 		<div class="navbar-collapse collapse">
 			<ul class="nav navbar-nav">
 				<li><a href="/">Home</a></li>
+				<li><a href="/">File</a></li>
+				<li><a href="/">About</a></li>
 			</ul>
 		</div>
 	</div>
@@ -36,4 +38,9 @@
 		{% block page_content %}{% endblock %}
 	</div>
 </div>
+{% endblock %}
+
+{% block scripts %}
+{{ super() }}
+{{ moment.include_moment() }}
 {% endblock %}
